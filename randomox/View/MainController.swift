@@ -9,19 +9,13 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
-    @IBAction func testBtnAction(_ sender: Any) {
-        let oxVC = OxViewController()
-        self.navigationController?.pushViewController(oxVC, animated: true)
-        
-    }
-    
 }
 
 

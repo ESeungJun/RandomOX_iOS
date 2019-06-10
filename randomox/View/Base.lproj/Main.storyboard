@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Feq-T6-VJa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SDMiSaeng.ttf">
+            <string>SDMiSaeng</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VZY-81-GWy">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Feq-T6-VJa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="mYs-RR-7SN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0al-DP-vU8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j60-bN-edu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugx-AX-NNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="137"/>
+        </scene>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="randomox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랜덤 OX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTR-Km-qXt">
+                                <rect key="frame" x="16" y="235" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="SDMiSaeng" family="Sandoll MiSaeng" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gq-ZV-z4R">
+                                <rect key="frame" x="16" y="331" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FwS-05-VyP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SDMiSaeng" family="Sandoll MiSaeng" pointSize="40"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rjg-A0-gMR" kind="show" id="btp-fX-h0T"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wf4-FP-XmW">
+                                <rect key="frame" x="45" y="381" width="285" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B4-Jy-ICt">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="32"/>
+                                        <fontDescription key="fontDescription" name="SDMiSaeng" family="Sandoll MiSaeng" pointSize="20"/>
+                                        <state key="normal" title="로그인">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLR-Ib-jBP">
+                                        <rect key="frame" x="162.5" y="0.0" width="122.5" height="32"/>
+                                        <fontDescription key="fontDescription" name="SDMiSaeng" family="Sandoll MiSaeng" pointSize="20"/>
+                                        <state key="normal" title="가입하기">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wf4-FP-XmW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="60p-gm-QEJ"/>
+                            <constraint firstItem="QTR-Km-qXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7lT-gu-OTg"/>
+                            <constraint firstItem="QTR-Km-qXt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="215" id="9qP-Y3-Xus"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QTR-Km-qXt" secondAttribute="trailing" constant="16" id="NWU-DQ-uhE"/>
+                            <constraint firstItem="2Gq-ZV-z4R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RJt-ma-hb4"/>
+                            <constraint firstItem="2Gq-ZV-z4R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="YZW-zO-syJ"/>
+                            <constraint firstItem="Wf4-FP-XmW" firstAttribute="top" secondItem="2Gq-ZV-z4R" secondAttribute="bottom" constant="10" id="ZcZ-y2-wYb"/>
+                            <constraint firstAttribute="trailing" secondItem="Wf4-FP-XmW" secondAttribute="trailing" constant="45" id="iha-bp-Ab5"/>
+                            <constraint firstItem="2Gq-ZV-z4R" firstAttribute="top" secondItem="QTR-Km-qXt" secondAttribute="bottom" constant="56" id="zGL-ya-FZ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AgV-7w-TAP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="136.95652173913044"/>
+        </scene>
+        <!--Ox View Controller-->
+        <scene sceneID="lVi-5e-dHu">
+            <objects>
+                <viewController id="rjg-A0-gMR" customClass="OxViewController" customModule="randomox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="OxViewController" id="h6q-h9-NAl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleAspectFit" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRj-ql-ea9">
+                                <rect key="frame" x="0.0" y="20" width="365" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#태그 #태그 #태그" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-ah-nxK">
+                                <rect key="frame" x="0.0" y="433.5" width="365" height="24"/>
+                                <fontDescription key="fontDescription" name="SDMiSaeng" family="Sandoll MiSaeng" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-lk-lY4">
+                                <rect key="frame" x="12" y="486.5" width="341" height="170.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="Esm-kb-bdB">
+                                        <rect key="frame" x="0.0" y="20.5" width="170.5" height="130"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="D6y-tS-D0i"/>
+                                            <constraint firstAttribute="height" constant="130" id="GP0-id-Fhn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="EwY-1U-c2U">
+                                        <rect key="frame" x="170.5" y="20.5" width="170.5" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="HA0-Ed-g86"/>
+                                            <constraint firstAttribute="height" constant="130" id="iPL-V2-XBO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350.5" id="C4O-0D-Cxh"/>
+                                    <constraint firstAttribute="height" constant="170.5" id="TPl-eM-FlT"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpO-4q-Wuc" customClass="CardView" customModule="randomox">
+                                <rect key="frame" x="12" y="89" width="341" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="connerRaduis">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FF9-ah-nxK" secondAttribute="trailing" id="0K0-Ze-fg2"/>
+                            <constraint firstItem="YpO-4q-Wuc" firstAttribute="leading" secondItem="WGE-MN-DMT" secondAttribute="leading" constant="12" id="83w-b3-X5l"/>
+                            <constraint firstAttribute="trailing" secondItem="YpO-4q-Wuc" secondAttribute="trailing" constant="12" id="C8s-hu-21y"/>
+                            <constraint firstItem="xTP-lk-lY4" firstAttribute="top" secondItem="FF9-ah-nxK" secondAttribute="bottom" constant="29" id="D7W-db-Fl6"/>
+                            <constraint firstItem="SRj-ql-ea9" firstAttribute="top" secondItem="WGE-MN-DMT" secondAttribute="top" id="Erc-F7-A6f"/>
+                            <constraint firstItem="xTP-lk-lY4" firstAttribute="leading" secondItem="WGE-MN-DMT" secondAttribute="leading" constant="12" id="FTl-Lv-hDX"/>
+                            <constraint firstItem="FF9-ah-nxK" firstAttribute="leading" secondItem="WGE-MN-DMT" secondAttribute="leading" id="Jss-3o-ksm"/>
+                            <constraint firstItem="SRj-ql-ea9" firstAttribute="leading" secondItem="h6q-h9-NAl" secondAttribute="leading" id="dWG-Kl-W5o"/>
+                            <constraint firstItem="YpO-4q-Wuc" firstAttribute="top" secondItem="SRj-ql-ea9" secondAttribute="bottom" constant="25" id="eyG-DQ-PzN"/>
+                            <constraint firstItem="WGE-MN-DMT" firstAttribute="trailing" secondItem="xTP-lk-lY4" secondAttribute="trailing" constant="12" id="nSL-uc-ct7"/>
+                            <constraint firstItem="FF9-ah-nxK" firstAttribute="top" secondItem="YpO-4q-Wuc" secondAttribute="bottom" constant="24.5" id="nlF-lB-srA"/>
+                            <constraint firstItem="WGE-MN-DMT" firstAttribute="bottom" secondItem="xTP-lk-lY4" secondAttribute="bottom" constant="10" id="qWz-gm-4kN"/>
+                            <constraint firstItem="SRj-ql-ea9" firstAttribute="trailing" secondItem="h6q-h9-NAl" secondAttribute="trailing" id="z5g-i4-clh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WGE-MN-DMT"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="SRj-ql-ea9" id="2vt-06-qwd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eP-K9-HTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.5999999999999" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" width="170.5" height="170.5"/>
+        <image name="cross" width="160" height="160"/>
+    </resources>
+</document>
