@@ -13,6 +13,7 @@
 		6310EABD22A4F44600EB0FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6310EABC22A4F44600EB0FE1 /* Assets.xcassets */; };
 		6310EAC022A4F44600EB0FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6310EABE22A4F44600EB0FE1 /* LaunchScreen.storyboard */; };
 		6310EACC22A50E3400EB0FE1 /* SDMiSaeng.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6310EACB22A50E2D00EB0FE1 /* SDMiSaeng.ttf */; };
+		6310EAD122A51EBC00EB0FE1 /* OxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6310EACF22A51EBC00EB0FE1 /* OxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6310EABF22A4F44600EB0FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6310EAC122A4F44600EB0FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6310EACB22A50E2D00EB0FE1 /* SDMiSaeng.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SDMiSaeng.ttf; path = ../../../../../Downloads/SDMiSaeng.ttf; sourceTree = "<group>"; };
+		6310EACF22A51EBC00EB0FE1 /* OxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6310EACB22A50E2D00EB0FE1 /* SDMiSaeng.ttf */,
 				6310EAB522A4F44500EB0FE1 /* AppDelegate.swift */,
 				6310EAB722A4F44500EB0FE1 /* ViewController.swift */,
+				6310EACF22A51EBC00EB0FE1 /* OxViewController.swift */,
 				6310EAB922A4F44500EB0FE1 /* Main.storyboard */,
 				6310EABC22A4F44600EB0FE1 /* Assets.xcassets */,
 				6310EABE22A4F44600EB0FE1 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6310EAB822A4F44500EB0FE1 /* ViewController.swift in Sources */,
+				6310EAD122A51EBC00EB0FE1 /* OxViewController.swift in Sources */,
 				6310EAB622A4F44500EB0FE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
