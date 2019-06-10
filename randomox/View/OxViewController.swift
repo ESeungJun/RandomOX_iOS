@@ -28,6 +28,7 @@ class OxViewController: UIViewController {
 
         let rigthInfoText = UILabel(frame: CGRect(x: 0, y: 0, width: 120, height: (navigationController?.navigationBar.frame.height)!))
         rigthInfoText.text = "내 점수 : 000점"
+        rigthInfoText.textAlignment = .right
         rigthInfoText.font = UIFont(name: "SDMiSaeng", size: 25)
         rigthInfoText.textColor = UIColor.black
 
